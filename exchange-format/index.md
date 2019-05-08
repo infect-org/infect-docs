@@ -45,7 +45,7 @@ Data can be sent to INFECT in any time interval. Overlapping data sets can be im
 
 
 ## Data Flow
-The image below shows how the data flows and is transformed from the patient to INFECT.
+The image below shows how the data flows from the patient to INFECT and how it is transformed in this process.
 ![Data Flow](data-flow.png)
 
 
