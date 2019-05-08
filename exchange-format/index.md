@@ -283,10 +283,13 @@ The sample source of a record describes from which organ / place the sample was 
 
 
 ## Changelog
+
 - **Version**: 2.0.0
 - **Date**: 2019-05-08
 - **Authors**: Pascal Frey, Felix Steiner, Michael van der Weg
 - **Description**: Complete Overhaul
+
+</br>
 
 - **Version**: 1.0.0
 - **Date**: 2019-02-15
