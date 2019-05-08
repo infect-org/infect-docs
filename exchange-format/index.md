@@ -3,6 +3,7 @@
 This document defines the format in which data is transferred to INFECT from external sources.
 
 **Specification Version:** 2.0.0
+</br>
 **Date:** 2019-05-08
 
 
