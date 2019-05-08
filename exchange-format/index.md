@@ -162,10 +162,10 @@ The patients age can either be specified as a **single age value** or an **age r
 - **Required**: False
 - **Example**: `5d`; `10m`; `65y`; `-`;  ` `
 
-### Variant *Single Age Value*
+#### Variant *Single Age Value*
 - **Column Name**: patient-age
 
-### Variant *Age Range*
+#### Variant *Age Range*
 - **Column Name**: patient-age-range-from
 - **Column Name**: patient-age-range-to
 
