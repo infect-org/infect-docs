@@ -31,7 +31,7 @@ This document defines the format in which data is transferred to INFECT from ext
     - <a href="#laboratory-identifier">Laboratory Identifier</a>
     - <a href="#institution-identifier">Institution Identifier</a>
     - <a href="#is-nosocomial">Is Nosocomial</a>
-    - <a href="# is-screening">Is Screening</a>
+    - <a href="#is-screening">Is Screening</a>
 - <a href="#changelog">**Changelog**</a>
 
 
@@ -283,7 +283,7 @@ The sample source of a record describes from which organ / place the sample was 
 
 
 
-## Changelog
+# Changelog
 
 - **Version**: 2.0.0
 - **Date**: 2019-05-08
