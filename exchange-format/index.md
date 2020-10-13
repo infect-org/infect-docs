@@ -172,7 +172,7 @@ The patients age can either be specified as a **single age value** or an **age r
 
 
 ## Sample Source
-The sample source of a record describes from which organ / place the sample was taken. Since a record can be a deduplicated representation/aggregation of many individual samples, many sample sources can be present for one record. The data displayed in INFECT can be assigned to a sample source which may be selected by the user in the INFECT user interface to filter the data. Sample sources are freely definable, but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatble labels in the INFECT configuration. The field may conatin mutiple sample source identifiers separated ba semicolon.
+The sample source of a record describes from which organ / place the sample was taken. Since a record can be a deduplicated representation/aggregation of many individual samples, many sample sources can be present for one record. The data displayed in INFECT can be assigned to a sample source which may be selected by the user in the INFECT user interface to filter the data. Sample sources are freely definable, but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatable labels in the INFECT configuration. The field may contain multiple sample source identifiers separated by semicolons.
 
 - **Required**: False
 - **Example**: `blood`;`blood;urine`; `-`;  ` `
@@ -189,7 +189,7 @@ The sample source of a record describes from which organ / place the sample was 
 ## Region
 - **Column Name**: region
 - **Format**: String, characters [a-z0-9 -_] max length: 100 characters.
-- **Description**:  The data displayed in INFECT must be assigned to regions which may be selected by the user in the INFECT user interface to filter the data. Regions are freely definable, but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatble labels in the INFECT configuration.
+- **Description**:  The data displayed in INFECT must be assigned to regions which may be selected by the user in the INFECT user interface to filter the data. Regions are freely definable, but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatable labels in the INFECT configuration.
 - **Required**: False
 - **Example**: `central-west-switzerland`; `-`;  ` `
 
