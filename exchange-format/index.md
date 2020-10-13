@@ -2,9 +2,9 @@
 
 This document defines the format in which data is transferred to INFECT from external sources.
 
-**Specification Version:** 2.0.0
+**Specification Version:** 3.0.0
 </br>
-**Date:** 2019-05-08
+**Date:** 2020-10-10
 
 
 ## Contents
@@ -172,7 +172,7 @@ The patients age can either be specified as a **single age value** or an **age r
 
 
 ## Sample Source
-The sample source of a record describes from which organ / place the sample was taken. Since a record can be a deduplicated representation/aggregation of many individual samples, many sample sources can be present for one record. The data displayed in INFECT can be assigned to a sample source which may be selected by the user in the INFECT user interface to filter the data. Sample sources are freely definable, but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatable labels in the INFECT configuration. The field may contain multiple sample source identifiers separated by semicolons.
+The sample source of a record describes from which organ / place the sample was taken. Since a record can be a deduplicated representation/aggregation of many individual samples, many sample sources can be present for one record. The data displayed in INFECT can be assigned to a sample source which may be selected by the user in the INFECT user interface to filter the data. Sample sources are freely definable (they can however **not** contain the character `;`), but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatable labels in the INFECT configuration. The field may contain multiple sample source identifiers separated by semicolons.
 
 - **Required**: False
 - **Example**: `blood`;`blood;urine`; `-`;  ` `
