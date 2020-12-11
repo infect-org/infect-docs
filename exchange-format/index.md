@@ -141,6 +141,13 @@ Resistance values can be delivered as qualitative, quantitative or genotype resi
 - **Required**: False, each record must contain at least one of the resistance measures
 - **Example**: `0.003`; `1.2`; `500`
 
+#### Variant *Disc Diffusion*
+- **Column Name**: resistance-quantitative-disc-diffusion
+- **Format**: Decimal(10, 5) (xxxxx.yyyyy; i.e. up to 5 digits before and after the decimal point), must be a positive number describing the minimum inhibitory concentration (MIC). Use the highest number in range for values higher than a certain number (e.g. 500 for >500)
+- **Description**:  Optional data if available; the quantitative resistance of antimicrobial susceptibility tested using disc diffusion.
+- **Required**: False, each record must contain at least one of the resistance measures
+- **Example**: `0.003`; `1.2`; `500`
+
 ### Country
 
 - **Column Name**: country
