@@ -2,9 +2,9 @@
 
 This document defines the format in which data is transferred to INFECT from external sources.
 
-**Specification Version:** 2.0.0
+**Specification Version:** 3.0.0
 </br>
-**Date:** 2019-05-08
+**Date:** 2020-10-10
 
 
 ## Contents
@@ -141,6 +141,13 @@ Resistance values can be delivered as qualitative, quantitative or genotype resi
 - **Required**: False, each record must contain at least one of the resistance measures
 - **Example**: `0.003`; `1.2`; `500`
 
+#### Variant *Disc Diffusion*
+- **Column Name**: resistance-quantitative-disc-diffusion
+- **Format**: Decimal(10, 5) (xxxxx.yyyyy; i.e. up to 5 digits before and after the decimal point), must be a positive number describing the minimum inhibitory concentration (MIC). Use the highest number in range for values higher than a certain number (e.g. 500 for >500)
+- **Description**:  Optional data if available; the quantitative resistance of antimicrobial susceptibility tested using disc diffusion.
+- **Required**: False, each record must contain at least one of the resistance measures
+- **Example**: `0.003`; `1.2`; `500`
+
 ### Country
 
 - **Column Name**: country
@@ -172,25 +179,10 @@ The patients age can either be specified as a **single age value** or an **age r
 
 
 ## Sample Source
-The sample source of a record describes from which organ / place the sample was taken. Since a record can be a deduplicated representation/aggregation of many individual samples, many sample sources can be present for one record. Deliver no value “-” for all columns if the data is available but not provided by the data provider.
+The sample source of a record describes from which organ / place the sample was taken. Since a record can be a deduplicated representation/aggregation of many individual samples, many sample sources can be present for one record. The data displayed in INFECT can be assigned to a sample source which may be selected by the user in the INFECT user interface to filter the data. Sample sources are freely definable (they can however **not** contain the character `;`), but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatable labels in the INFECT configuration. The field may contain multiple sample source identifiers separated by semicolons.
 
 - **Required**: False
-- **Example**: `false`; `true`; `-`;  ` `
-
-#### Variant *Blood*
-- **Column Name**: sample-source-blood
-- **Format**: Boolean. True = sample was taken from blood, False = sample was not taken from blood.
-- **Description**:  Identifies a blood culture sample
-
-#### Variant *Urine*
-- **Column Name**: sample-source-urine
-- **Format**: Boolean. True = sample was taken from urine, False = sample was not taken from urine.
-- **Description**:  Defines if the sample was taken from urine
-
-#### Variant *Other*
-- **Column Name**: sample-source-other
-- **Format**: Boolean. True = sample was taken from a source other than blood or urine, False = sample was **not** taken from a source other than blood or urine.
-- **Description**:  Defines if the sample was taken from another organ than blood or urine or an unknown place.
+- **Example**: `blood`;`blood;urine`; `-`;  ` `
 
 
 ## Patient Setting
@@ -204,7 +196,7 @@ The sample source of a record describes from which organ / place the sample was 
 ## Region
 - **Column Name**: region
 - **Format**: String, characters [a-z0-9 -_] max length: 100 characters.
-- **Description**:  The data displayed in INFECT must be assigned to regions which may be selected by the user in the INFECT user interface to filter the data. Regions are freely definable, but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatble labels in the INFECT configuration.
+- **Description**:  The data displayed in INFECT must be assigned to regions which may be selected by the user in the INFECT user interface to filter the data. Regions are freely definable, but not changeable after they were initially defined since the existing data in the caches of INFECT would have to change too, which is currently not possible. The values sent to INFECT are identifiers which later are mapped to translatable labels in the INFECT configuration.
 - **Required**: False
 - **Example**: `central-west-switzerland`; `-`;  ` `
 
