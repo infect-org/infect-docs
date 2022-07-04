@@ -1,6 +1,8 @@
 # Specification Data Exchange Format for INFECT
 
-This document defines the format in which data is transferred to INFECT from external sources.
+This document defines the format in which data is transferred to INFECT from external sources. 
+
+See the [example CSV file](https://github.com/infect-org/infect-docs/blob/master/exchange-format/sample-csv-file.csv).
 
 **Specification Version:** 2.0.0
 </br>
